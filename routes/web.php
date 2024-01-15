@@ -37,6 +37,15 @@ Route::middleware('auth')->group(function () {
             'update' => 'admin.user.update',
             'destroy' => 'admin.user.destroy',
         ]);
+        Route::resource('menu', \App\Http\Controllers\Admin\MenuController::class)->names([
+            'index' => 'admin.menu.index',
+            'create' => 'admin.menu.create',
+            'store' => 'admin.menu.store',
+            'show' => 'admin.menu.show',
+            'edit' => 'admin.menu.edit',
+            'update' => 'admin.menu.update',
+            'destroy' => 'admin.menu.destroy',
+        ]);
     });
 
 });

@@ -6,7 +6,8 @@
     <title>AdminLTE 3 | Dashboard</title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{asset('assets/fontawesome-free/css/all.min.css')}}">
     <!-- Ionicons -->
@@ -14,24 +15,25 @@
     <!-- Tempusdominus Bootstrap 4 -->
     <link rel="stylesheet" href="{{asset('assets/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
     <!-- iCheck -->
-{{--    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">--}}
+    {{--    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">--}}
     <!-- JQVMap -->
-{{--    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">--}}
+    {{--    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">--}}
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('assets/css/adminlte.min.css')}}">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="{{asset('assets/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
     <!-- Daterange picker -->
-{{--    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">--}}
+    {{--    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">--}}
     <!-- summernote -->
-{{--    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">--}}
+    {{--    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">--}}
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="{{asset('assets/img/AdminLTELogo.png')}}" alt="AdminLTELogo" height="60" width="60">
+        <img class="animation__shake" src="{{asset('assets/img/AdminLTELogo.png')}}" alt="AdminLTELogo" height="60"
+             width="60">
     </div>
 
     <!-- Navbar -->
@@ -59,7 +61,8 @@
                 <div class="navbar-search-block">
                     <form class="form-inline">
                         <div class="input-group input-group-sm">
-                            <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                            <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                                   aria-label="Search">
                             <div class="input-group-append">
                                 <button class="btn btn-navbar" type="submit">
                                     <i class="fas fa-search"></i>
@@ -164,7 +167,8 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+                <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#"
+                   role="button">
                     <i class="fas fa-th-large"></i>
                 </a>
             </li>
@@ -172,12 +176,12 @@
     </nav>
     <!-- /.navbar -->
 
-   @include('layouts.navigation')
+    @include('layouts.navigation')
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
-        <div class="content-header">
+        {{--<div class="content-header">
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
@@ -191,10 +195,16 @@
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container-fluid -->
-        </div>
+        </div>--}}
         <!-- /.content-header -->
 
-        @yield('content')
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                @yield('content')
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
